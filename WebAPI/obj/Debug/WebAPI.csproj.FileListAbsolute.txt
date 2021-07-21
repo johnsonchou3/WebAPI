@@ -93,3 +93,5 @@ C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebA
 C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebAPI.csproj.CopyComplete
 C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebAPI.pdb
+C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebAPI.Properties.Resources.resources
+C:\Users\johns\OneDrive\文件\Cmoney\新進\WebApi\WebAPI\WebAPI\obj\Debug\WebAPI.csproj.GenerateResource.cache

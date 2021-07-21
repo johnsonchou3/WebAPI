@@ -3,9 +3,15 @@ using System.Web.Optimization;
 
 namespace WebAPI
 {
+    /// <summary>
+    /// 模版自動產生文件
+    /// </summary>
     public class BundleConfig
     {
-        // 如需統合的詳細資訊，請瀏覽 https://go.microsoft.com/fwlink/?LinkId=301862
+        /// <summary>
+        /// 模版自動產生文件
+        /// </summary>
+        /// <param name="bundles">使用bundles</param>
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(

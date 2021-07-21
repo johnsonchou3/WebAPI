@@ -9,8 +9,14 @@ using System.Web.Routing;
 
 namespace WebAPI
 {
+    /// <summary>
+    /// WebApi ªºclass, Ä~©ÓHttpApplication
+    /// </summary>
     public class WebApiApplication : System.Web.HttpApplication
     {
+        /// <summary>
+        /// Application Startªºmethod
+        /// </summary>
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
