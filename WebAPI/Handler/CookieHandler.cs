@@ -30,7 +30,7 @@ namespace WebAPI.Handler
         {
             string IdValue;
 
-            // Try to get the ID from the request; otherwise create a new ID.
+            // 取得ID, 沒有則新增
             var cookie = request.Headers.GetCookies(Id).FirstOrDefault();
             if (cookie == null)
             {
@@ -45,18 +45,18 @@ namespace WebAPI.Handler
                 }
                 catch (FormatException)
                 {
-                    // Bad session ID. Create a new one.
+                    // ID 格式錯誤並重設
                     IdValue = Guid.NewGuid().ToString();
                 }
             }
 
-            // Store the session ID in the request property bag.
+            // 在request property 中放入ID
             request.Properties[Id] = IdValue;
 
-            // Continue processing the HTTP request.
+            // 繼續處理http request.
             HttpResponseMessage response = await base.SendAsync(request, cancellationToken);
 
-            // Set the session ID as a cookie in the response message.
+            // 在response 裡放上ID
             response.Headers.AddCookies(new CookieHeaderValue[] 
             {
             new CookieHeaderValue(Id, IdValue)
